@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Formalwear Frenzy</title>
+  </head>
+  <body>
+    <form id="costForm" name="costForm">
+        <div class="table1">
+            <div class="column staff">
+                <p>Staff member</p>
+                <label for="andrea">Andrea</label>
+                <label for="barbara">Barbara</label>
+                <label for="conrad">Conrad</label>
+            </div>
+            <div class="column weeklyHours">
+                <p>Weekly hours</p>
+                <input name="andrea" type="number" value="17" min="0" step="0.5">
+                <input name="barbara" type="number" value="21" min="0" step="0.5">
+                <input name="conrad" type="number" value="15.5" min="0" step="0.5">
+            </div>
+            <div class="column hourlyPay">
+                <p>Hourly pay</p>
+                <input name="andrea" type="number" value="26" min="0" step="0.05">
+                <input name="barbara" type="number" value="26" min="0" step="0.05">
+                <input name="conrad" type="number" value="36" min="0" step="0.05">
+            </div>
+            <div class="column leave">
+                <p>Taking leave?</p>
+                <span>
+                    <input type="radio" id="yes" name="andrea" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="andrea" value="no">
+                    <label for="no">No</label>
+                </span>
+                <span>
+                    <input type="radio" id="yes" name="barbara" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="barbara" value="no">
+                    <label for="no">No</label>
+                </span>
+                <span>
+                    <input type="radio" id="yes" name="conrad" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="conrad" value="no">
+                    <label for="no">No</label>
+                </span>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="column">
+                <div class="otherCosts">
+                    <label for="fixed">Annual fixed cost</label>
+                    <input name="fixed" type="number" value="21000" min="0" step="1">
+                </div>
+                <div class="otherCosts">
+                    <label for="utilities">Monthly utilities</label>
+                    <input name="utilities" type="number" value="1500" min="0" step="1">
+                </div>
+            </div>
+            <div>
+                <button class="submit margin-top" type="submit" form="costForm">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <p>Annual outgoing cost:</p>
+    <p>Breakdown:</p>
+
+    <p>chart1</p>
+    <table>
+    <th>5 figure</th>
+    </table>
+    <table>
+    <th>5 figure</th>
+    </table>
+    <p>chart2</p>
+
+    <div id="task3">
+        <div>
+            <label for="material">Select material:</label>
+
+            <select name="material" id="material">
+                <option value="cotton">Cotton</option>
+                <option value="leather">Leather</option>
+                <option value="silk">Silk</option>
+                <option value="tweed">Tweed</option>
+                <option value="wool">Wool</option>
+            </select> 
+
+            <label class="margin" for="size">Select size:</label>
+            
+            <select name="size" id="size">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+        </div>
+        <p class="quote3output">Quote: </p>
+        <p class="manufactureBoolean"></p>
+    </div>
+
+
+  </body>
+  <script src="main.js" charset="utf-8"></script>
+  <noscript>
+    JavaScript is required to run this page, please turn it on and reload the page
+  </noscript>
+</html>
