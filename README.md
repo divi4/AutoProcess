@@ -1,33 +1,8 @@
-form id 
-input
-name
+# Formalwear Frenzy - Processes and Automation  
+A website for a clothing business that can provide annual running costs, display charts and patterns based on historical order data, calculate a quote based on material and size of order and whether to start manufacture immediately based on items determined popularity.  
 
+**Link to project:** https://www.formalwear-frenzy.netlify.app  
 
-form id
-input
-valueAsNumber
+![alt tag](https://ibb.co/bQ3Z2tD/formalwear-frenzy.png)  
 
-
-
-
-
-
-
-line chart
-
-    LineController
-    LineElement
-    PointElement
-    Default scales: CategoryScale (x), LinearScale (y)
-
-
-        CategoryScale
-    TimeScale
-    TimeSeriesScale
-
-        Decimation
-    Filler - used to fill area described by LineElement, see Area charts
-    Legend
-    SubTitle
-    Title
-    Tooltip
+**Tech used:** HTML, CSS, JavaScript  
