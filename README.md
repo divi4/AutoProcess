@@ -3,6 +3,6 @@ A website for a clothing business that can provide annual running costs, display
 
 **Link to project:** https://www.formalwear-frenzy.netlify.app  
 
-![alt tag](https://ibb.co/bQ3Z2tD/formalwear-frenzy.png)  
+![alt tag](https://i.ibb.co/hLMjZ0w/formalwear-frenzy.png)  
 
 **Tech used:** HTML, CSS, JavaScript  
