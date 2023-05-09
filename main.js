@@ -92,8 +92,32 @@ var trace2 = {
 
 
 var data = [trace1, trace2];
-  const boxplot = document.getElementById('boxplot');
-  Plotly.newPlot('boxplot', data);
+
+var layout = {
+    margin: {t:0,r:0,b:0,l:20},
+    title: {
+        text:'Range of quotes in variance by staff',
+        font: {
+          family: 'Arial',
+          size: 24
+        },
+        yref: 'paper',
+        automargin: true,
+      },
+    yaxis: {
+      automargin: true,
+      tickangle: 90,
+      title: {
+        text: "Percentage",
+        font: {
+            family: 'Arial',
+            size: 18
+          },
+        standoff: 40
+      }}} 
+
+const boxplot = document.getElementById('boxplot');
+Plotly.newPlot('boxplot', data, layout);
 
 
 
@@ -103,21 +127,52 @@ var trace1 = {
     x: [27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],
     name: 'Andrea',
     type: 'scatter'
-  
-  };
-  
-  
-  var trace2 = {
+};
+
+
+var trace2 = {
     y: [71.24,66.19,66.73,65.78,67.39,69.28,62.46,66.22,63.81,54.22,69.75,50.27,65.49,61.87,65.95,60.50,55.82,67.66,74.13],
     x: [27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],
     name: 'Barbara',
     type: 'scatter'
-  
-  };
-  
-  var data = [trace1, trace2];
-  
-  Plotly.newPlot('lineChart', data);
+};
+
+var layout = {
+    margin: {t:0,r:0,b:0,l:20},
+    title: {
+        text:'Average weekly quote variance by staff',
+        font: {
+          family: 'Arial',
+          size: 24
+        },
+        yref: 'paper',
+        automargin: true,
+      },
+    xaxis: {
+      automargin: true,
+      tickangle: 90,
+      title: {
+        text: "Weeks",
+        font: {
+            family: 'Arial',
+            size: 18
+          },
+        standoff: 20
+      }},
+    yaxis: {
+      automargin: true,
+      tickangle: 90,
+      title: {
+        text: "Percentage",
+        font: {
+            family: 'Arial',
+            size: 18
+          },
+        standoff: 40
+      }}} 
+
+var data = [trace1, trace2];
+Plotly.newPlot('lineChart', data, layout);
 
 
 
@@ -130,8 +185,8 @@ document.querySelector("#quoteForm").addEventListener("submit", function(e) {
     var material = document.getElementById("quoteForm")[1].value
     var size = document.getElementById("quoteForm")[3].value
     
-    document.querySelector(".quote3output").innerHTML = "Quote: $"
-    document.querySelector(".quote3output").innerHTML +=  categoryQuote[material][size].quote  // Allows to dynamically resolve object property names
+    document.querySelector(".quote3output").innerHTML = "Quote: $0"
+    document.querySelector(".quote3output").innerHTML = "Quote: $" +  categoryQuote[material][size].quote  // Allows to dynamically resolve object property names
     if (categoryQuote[material][size].isPopular===true) {
         document.querySelector(".manufactureBoolean").innerHTML = "Start manufacturing immediately"
     } else if (categoryQuote[material][size].isPopular===false) {

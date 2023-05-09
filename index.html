@@ -5,77 +5,80 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
     <title>Formalwear Frenzy</title>
-    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
-    <form id="costForm" name="costForm">
-        <div class="table1">
-            <div class="column staff">
-                <p>Staff member</p>
-                <label for="andrea">Andrea</label>
-                <label for="barbara">Barbara</label>
-                <label for="conrad">Conrad</label>
-            </div>
-            <div class="column weeklyHours">
-                <p>Weekly hours</p>
-                <input name="andrea" type="number" value="17" min="0" step="0.5">
-                <input name="barbara" type="number" value="21" min="0" step="0.5">
-                <input name="conrad" type="number" value="15.5" min="0" step="0.5">
-            </div>
-            <div class="column hourlyPay">
-                <p>Hourly pay</p>
-                <input name="andrea" type="number" value="26" min="0" step="0.05">
-                <input name="barbara" type="number" value="26" min="0" step="0.05">
-                <input name="conrad" type="number" value="36" min="0" step="0.05">
-            </div>
-            <div class="column leave">
-                <p>Taking leave?</p>
-                <fieldset>
-                    <input type="radio" id="yes" name="andreaRadio" value="yes" checked>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="andreaRadio" value="no">
-                    <label for="no">No</label>
-                </fieldset>
-                <fieldset>
-                    <input type="radio" id="yes" name="barbaraRadio" value="yes" checked>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="barbaraRadio" value="no">
-                    <label for="no">No</label>
-                </fieldset>
-                <fieldset>
-                    <input type="radio" id="yes" name="conradRadio" value="yes" checked>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="conradRadio" value="no">
-                    <label for="no">No</label>
-                </fieldset>
-            </div>
-        </div>
-
-        <div class="wrap">
-            <div class="column">
-                <div class="otherCosts">
-                    <label for="fixed">Annual fixed cost</label>
-                    <input name="fixed" type="number" value="21000" min="0" step="1">
+    <h1 class="margin-left">Formalwear Frenzy - Digital Revolution AT3</h1>
+    <h2>Task 1</h2>
+    <div class="div1">
+        <form id="costForm" name="costForm">
+            <div class="table1 wrap">
+                <div class="column staff">
+                    <p>Staff member</p>
+                    <label class="andreaBg" for="andrea">Andrea</label>
+                    <label for="barbara">Barbara</label>
+                    <label for="conrad">Conrad</label>
                 </div>
-                <div class="otherCosts">
-                    <label for="utilities">Monthly utilities</label>
-                    <input name="utilities" type="number" value="1500" min="0" step="1">
+                <div class="column weeklyHours">
+                    <p>Weekly hours</p>
+                    <input class="andreaBg" name="andrea" type="number" value="17" min="0" step="0.5">
+                    <input name="barbara" type="number" value="21" min="0" step="0.5">
+                    <input name="conrad" type="number" value="15.5" min="0" step="0.5">
                 </div>
-                <div class="otherCosts">
-                    <label for="casual">Casual pay</label>
-                    <input name="casual" type="number" value="39" min="0" step="0.05">
+                <div class="column hourlyPay">
+                    <p>Hourly pay</p>
+                    <input name="andrea" type="number" value="26" min="0" step="0.05">
+                    <input name="barbara" type="number" value="26" min="0" step="0.05">
+                    <input name="conrad" type="number" value="36" min="0" step="0.05">
+                </div>
+                <div class="column leave">
+                    <p>Taking leave?</p>
+                    <fieldset>
+                        <input type="radio" id="yes" name="andreaRadio" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="andreaRadio" value="no">
+                        <label for="no">No</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="yes" name="barbaraRadio" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="barbaraRadio" value="no">
+                        <label for="no">No</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="yes" name="conradRadio" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="conradRadio" value="no">
+                        <label for="no">No</label>
+                    </fieldset>
                 </div>
             </div>
-            <div>
-                <button class="submit margin-top" type="submit" form="costForm">Submit</button>
+
+            <div class="wrap">
+                <div class="column">
+                    <div class="otherCosts">
+                        <label for="fixed">Annual fixed cost</label>
+                        <input name="fixed" type="number" value="21000" min="0" step="1">
+                    </div>
+                    <div class="otherCosts">
+                        <label for="utilities">Monthly utilities</label>
+                        <input name="utilities" type="number" value="1500" min="0" step="1">
+                    </div>
+                    <div class="otherCosts">
+                        <label for="casual">Casual pay</label>
+                        <input name="casual" type="number" value="39" min="0" step="0.05">
+                    </div>
+                </div>
+                <div class="button-center">
+                    <button class="submit margin-sides" type="submit" form="costForm">Submit</button>
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
 
-    <p class="t1Output">Annual outgoing cost: $0</p>
+        <p class="t1Output">Annual outgoing cost: $0</p>
+    </div>
 
-
-
+    <h2>Task 2</h2>
     <div class="charts">
         <div id="boxplot"></div>
         <div class="tables">
@@ -133,10 +136,11 @@
         </div>
     </div>
 
-    <div class="charts">
+    <div class="charts margin-top">
         <div id="lineChart"></div>
     </div>
 
+    <h2>Task 3+4</h2>
     <div id="task3">
         <form id="quoteForm" name="quoteForm">
             <fieldset>
@@ -152,7 +156,7 @@
             </fieldset>
 
             <fieldset>
-                <label class="margin" for="size">Select size:</label>
+                <label class="margin-left" for="size">Select size:</label>
                 
                 <select name="size" id="size">
                     <option value="xs">XS</option>
@@ -166,12 +170,12 @@
             <div>
                 <button class="submit2" type="submit" form="quoteForm">Submit</button>
             </div>
+        </form>
+        <div class="t3answers">
+            <p class="quote3output margin-left21">Quote: $0</p>
+            <p class="manufactureBoolean margin-left21"></p>
         </div>
-        <p class="quote3output">Quote: $</p>
-        <p class="manufactureBoolean"></p>
     </div>
-
-
   </body>
   <script src="main.js" charset="utf-8"></script>
   <noscript>
