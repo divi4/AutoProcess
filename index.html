@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -71,49 +71,107 @@
         </div>
     </form>
 
-    <p class="t1Output">Annual outgoing cost: </p>
-    <p>Breakdown:</p>
+    <p class="t1Output">Annual outgoing cost: $0</p>
 
-    <p>chart1</p>
-    <div class="graph-box">
-        <canvas id="chart1" width="325" height="300"></canvas>
+
+
+    <div class="charts">
+        <img src="boxplot.png" alt="Boxplot">
+        <div class="tables">
+            <table>
+                <tr>
+                    <th>5 figure summary for Andrew</th>
+                </tr>
+                <tr class="cell">
+                    <td>Min</td>
+                    <td>40.61%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Q1</td>
+                    <td>63.56%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Median</td>
+                    <td>70.99%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Q3</td>
+                    <td>77.36%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Max</td>
+                    <td>83.69%</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>5 figure summary for Barbara</th>
+                </tr>
+                <tr class="cell">
+                    <td>Min</td>
+                    <td>24.29%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Q1</td>
+                    <td>57.91%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Median</td>
+                    <td>65.73%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Q3</td>
+                    <td>72.74%</td>
+                </tr>
+                <tr class="cell">
+                    <td>Max</td>
+                    <td>83.25%</td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <table>
-    <th>5 figure</th>
-    </table>
-    <p>chart2</p>
+
+    <div class="charts">
+            <img src="line.png" alt="Line chart">
+    </div>
 
     <div id="task3">
-        <div>
-            <label for="material">Select material:</label>
+        <form id="quoteForm" name="quoteForm">
+            <fieldset>
+                <label for="material">Select material:</label>
 
-            <select name="material" id="material">
-                <option value="cotton">Cotton</option>
-                <option value="leather">Leather</option>
-                <option value="silk">Silk</option>
-                <option value="tweed">Tweed</option>
-                <option value="wool">Wool</option>
-            </select> 
+                <select name="material" id="material">
+                    <option value="cotton">Cotton</option>
+                    <option value="leather">Leather</option>
+                    <option value="silk">Silk</option>
+                    <option value="tweed">Tweed</option>
+                    <option value="wool">Wool</option>
+                </select> 
+            </fieldset>
 
-            <label class="margin" for="size">Select size:</label>
-            
-            <select name="size" id="size">
-                <option value="xs">XS</option>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-                <option value="xxl">XXL</option>
-            </select>
+            <fieldset>
+                <label class="margin" for="size">Select size:</label>
+                
+                <select name="size" id="size">
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </fieldset>
+            <div>
+                <button class="submit2" type="submit" form="quoteForm">Submit</button>
+            </div>
         </div>
-        <p class="quote3output">Quote: </p>
+        <p class="quote3output">Quote: $</p>
         <p class="manufactureBoolean"></p>
     </div>
 
 
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src=" https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.2.0/build/index.umd.min.js "></script>
   <script src="main.js" charset="utf-8"></script>
   <noscript>
     JavaScript is required to run this page, please turn it on and reload the page

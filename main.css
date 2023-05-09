@@ -85,3 +85,58 @@ input {
 .margin-top {
     margin-top: 1.5rem;
 }
+
+
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+img{
+    width:100%;
+    max-width:800px
+}
+
+table, th, tr {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.tables {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cell {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+#task3 > form {
+    display: flex;
+    justify-content: row;
+}
+
+#task3 > form > fieldset {
+    border: none;
+}
+
+.submit2 {
+    margin-top: 0.36rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

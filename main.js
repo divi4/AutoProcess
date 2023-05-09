@@ -3,7 +3,7 @@ document.querySelector("#costForm").addEventListener("submit", function(e) {
     var costForm = document.getElementById("costForm");
     var staff = createStaffObject(costForm)
     var annualCost = utilMonthToYearly(costForm) + findStaffSalary(staff) + costForm[15].valueAsNumber + findCasualHours(staff)
-    document.querySelector(".t1Output").innerHTML = "Annual outgoing cost: "
+    document.querySelector(".t1Output").innerHTML = "Annual outgoing cost: $"
     document.querySelector(".t1Output").innerHTML += annualCost
   })
 
@@ -72,72 +72,152 @@ function findCasualAnnualSalary(casualHours, staff) {
 }
 
 
-// [50.31, 63.56, 70.99, 13.80, 69.82, 77.36, 83.69]
-// 5: median
-// 7: max
+var material = document.getElementById("quoteForm")
+console.log(material)
 
-
-
-function staffVariance(staffNum) {
-    if (staffNum===1) {
-        return [50.31, 63.56, 70.99, 13.80, 69.82, 77.36, 83.69]
-    }
-    if(staffNum===2) {
-        return [57, 60, 67, 19, 75, 85, 90]
-    }
-
-  }
+document.querySelector("#quoteForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var material = document.getElementById("quoteForm")[1].value
+    var size = document.getElementById("quoteForm")[3].value
     
-    const boxplotData = {
-    // define label tree
-    labels: ['Variance'],
-    datasets: [{
-        label: 'Andrea',
-        backgroundColor: 'rgba(255,0,0,0.5)',
-        borderColor: 'red',
-        borderWidth: 1,
-        outlierColor: '#999999',
-        padding: 10,
-        itemRadius: 0,
-        data: [
-            staffVariance(1)
-        // 50.31, // min whisker
-        // 63.56, // lower q
-        // 70.99, // median
-        // 13.80 , // iqr
-        // 69.82, // mean
-        // 77.36, // upper q
-        // 83.69 // max whisker
-        ]
-    },
-    {
-        label: 'Barbara',
-        backgroundColor:  'rgba(0,0,255,0.5)',
-        borderColor: 'blue',
-        borderWidth: 1,
-        outlierColor: '#999999',
-        padding: 10,
-        itemRadius: 0,
-        data: [
-            staffVariance(2)
-        ]
-      }]
-    };
-    window.onload = () => {
-    const ctx = document.getElementById("chart1").getContext("2d");
-    window.myBar = new Chart(ctx, {
-        type: 'boxplot',
-        data: boxplotData,
-        options: {
-        responsive: true,
-        legend: {
-            position: 'top',
+    document.querySelector(".quote3output").innerHTML = "Quote: $"
+    document.querySelector(".quote3output").innerHTML +=  categoryQuote[material][size].quote  // Allows to dynamically resolve object property names
+    if (categoryQuote[material][size].isPopular===true) {
+        document.querySelector(".manufactureBoolean").innerHTML = "Start manufacturing immediately"
+    } else if (categoryQuote[material][size].isPopular===false) {
+        document.querySelector(".manufactureBoolean").innerHTML = "Wait for quote confirmation by customer"
+    }
+})
+
+categoryQuote = {
+    cotton: {
+        xs: {
+            quote : 70.20,
+            isPopular: true
         },
-        title: {
-            display: true,
-            text: 'Chart.js Box Plot Chart'
+        s: {
+            quote : 67.07,
+            isPopular: false
+        },
+        m: {
+            quote: 77.58,
+            isPopular: false
+        },
+        l: {
+            quote: 76.85,
+            isPopular: false
+        },
+        xl: {
+            quote: 80.98,
+            isPopular: true
+        },
+        xxl: {
+            quote: 96.83,
+            isPopular: true
         }
+    },
+    leather: {
+        xs: {
+            quote : 148.66,
+            isPopular: true
+        },
+        s: {
+            quote : 178.34,
+            isPopular: false
+        },
+        m: {
+            quote: 153.43,
+            isPopular: false
+        },
+        l: {
+            quote: 173.97,
+            isPopular: false
+        },
+        xl: {
+            quote: 206.80,
+            isPopular: true
+        },
+        xxl: {
+            quote: 188.65,
+            isPopular: false
         }
-    });
-    
-    };
+    },
+    silk: {
+        xs: {
+            quote : 427.80,
+            isPopular: false
+        },
+        s: {
+            quote : 515.60,
+            isPopular: false
+        },
+        m: {
+            quote: 497.93,
+            isPopular: false
+        },
+        l: {
+            quote: 396.15,
+            isPopular: false
+        },
+        xl: {
+            quote: 650.72,
+            isPopular: false
+        },
+        xxl: {
+            quote: 668.87,
+            isPopular: false
+        }
+    },
+    tweed: {
+        xs: {
+            quote : 201.38,
+            isPopular: false
+        },
+        s: {
+            quote : 264.97,
+            isPopular: false
+        },
+        m: {
+            quote: 221.68,
+            isPopular: false
+        },
+        l: {
+            quote: 226.68,
+            isPopular: false
+        },
+        xl: {
+            quote: 212.20,
+            isPopular: false
+        },
+        xxl: {
+            quote: 279.33,
+            isPopular: false
+        }
+    },
+    wool: {
+        xs: {
+            quote : 124.22,
+            isPopular: true
+        },
+        s: {
+            quote : 163.44,
+            isPopular: false
+        },
+        m: {
+            quote: 136.74,
+            isPopular: true
+        },
+        l: {
+            quote: 139.82,
+            isPopular: true
+        },
+        xl: {
+            quote: 146.48,
+            isPopular: true
+        },
+        xxl: {
+            quote: 172.96,
+            isPopular: true
+        }
+    }
+}
