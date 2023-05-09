@@ -96,7 +96,8 @@ input {
     margin-bottom: 1rem;
 }
 
-img{
+#boxplot,
+#lineChart {
     width:100%;
     max-width:800px
 }

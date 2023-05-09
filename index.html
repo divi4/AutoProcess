@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
     <title>Formalwear Frenzy</title>
+    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
   </head>
   <body>
     <form id="costForm" name="costForm">
@@ -76,7 +77,7 @@
 
 
     <div class="charts">
-        <img src="boxplot.png" alt="Boxplot">
+        <div id="boxplot"></div>
         <div class="tables">
             <table>
                 <tr>
@@ -133,7 +134,7 @@
     </div>
 
     <div class="charts">
-            <img src="line.png" alt="Line chart">
+        <div id="lineChart"></div>
     </div>
 
     <div id="task3">
