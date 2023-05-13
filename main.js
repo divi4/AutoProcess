@@ -187,142 +187,185 @@ document.querySelector("#quoteForm").addEventListener("submit", function(e) {
     
     document.querySelector(".quote3output").innerHTML = "Quote: $0"
     document.querySelector(".quote3output").innerHTML = "Quote: $" +  categoryQuote[material][size].quote  // Allows to dynamically resolve object property names
-    if (categoryQuote[material][size].isPopular===true) {
-        document.querySelector(".manufactureBoolean").innerHTML = "Start manufacturing immediately"
-    } else if (categoryQuote[material][size].isPopular===false) {
-        document.querySelector(".manufactureBoolean").innerHTML = "Wait for quote confirmation by customer"
+
+    if (categoryQuote[material][size].inventory===0) {
+        if (categoryQuote[material][size].isPopular===true) {
+            document.querySelector(".manufactureBoolean").innerHTML = "Start manufacturing immediately"
+        } else if (categoryQuote[material][size].isPopular===false) {
+            document.querySelector(".manufactureBoolean").innerHTML = "Wait for quote confirmation by customer"
+        }
+        document.querySelector(".inventoryLevels").innerHTML = "Inventory: No stock available"
+    } else {
+        document.querySelector(".manufactureBoolean").innerHTML = "Use inventory stock"
+        if (categoryQuote[material][size].inventory<7) {
+            document.querySelector(".inventoryLevels").innerHTML = "Inventory: Low levels of this stock available"
+        } else if (categoryQuote[material][size].inventory>=7) {
+            document.querySelector(".inventoryLevels").innerHTML = "Inventory: High levels of this stock available"
+        }
+        
     }
+
 })
 
 categoryQuote = {
     cotton: {
         xs: {
             quote : 70.20,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         s: {
             quote : 67.07,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         m: {
             quote: 77.58,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         l: {
             quote: 76.85,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         xl: {
             quote: 80.98,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         xxl: {
             quote: 96.83,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         }
     },
     leather: {
         xs: {
             quote : 148.66,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         s: {
             quote : 178.34,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         m: {
             quote: 153.43,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         l: {
             quote: 173.97,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         xl: {
             quote: 206.80,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         xxl: {
             quote: 188.65,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         }
     },
     silk: {
         xs: {
             quote : 427.80,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         s: {
             quote : 515.60,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         m: {
             quote: 497.93,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         l: {
             quote: 396.15,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         xl: {
             quote: 650.72,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         xxl: {
             quote: 668.87,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         }
     },
     tweed: {
         xs: {
             quote : 201.38,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         s: {
             quote : 264.97,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         m: {
             quote: 221.68,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         l: {
             quote: 226.68,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         xl: {
             quote: 212.20,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         xxl: {
             quote: 279.33,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         }
     },
     wool: {
         xs: {
             quote : 124.22,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         s: {
             quote : 163.44,
-            isPopular: false
+            isPopular: false,
+            inventory: 0
         },
         m: {
             quote: 136.74,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         l: {
             quote: 139.82,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         xl: {
             quote: 146.48,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         },
         xxl: {
             quote: 172.96,
-            isPopular: true
+            isPopular: true,
+            inventory: 0
         }
     }
 }
