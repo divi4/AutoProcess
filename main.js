@@ -79,15 +79,15 @@ var y1 = [72.40,67.30,74.02,67.57,65.51,61.32,68.59,60.50,73.65,71.67,70.21,62.0
 
 var trace1 = {
   y: y0,
-  name: 'Andrea',
-  type: 'box'
+  name: "Andrea",
+  type: "box"
 };
 
 
 var trace2 = {
   y: y1,
-  name: 'Barbara',
-  type: 'box'
+  name: "Barbara",
+  type: "box"
 };
 
 
@@ -96,12 +96,12 @@ var data = [trace1, trace2];
 var layout = {
     margin: {t:0,r:0,b:0,l:20},
     title: {
-        text:'Range of quotes in variance by staff',
+        text:"Range of variance of quotes vs manufacturing cost by staff",
         font: {
-          family: 'Arial',
+          family: "Arial",
           size: 24
         },
-        yref: 'paper',
+        yref: "paper",
         automargin: true,
       },
     yaxis: {
@@ -110,14 +110,14 @@ var layout = {
       title: {
         text: "Percentage",
         font: {
-            family: 'Arial',
+            family: "Arial",
             size: 18
           },
         standoff: 40
       }}} 
 
-const boxplot = document.getElementById('boxplot');
-Plotly.newPlot('boxplot', data, layout);
+const boxplot = document.getElementById("boxplot");
+Plotly.newPlot("boxplot", data, layout);
 
 
 
@@ -125,27 +125,27 @@ Plotly.newPlot('boxplot', data, layout);
 var trace1 = {
     y: [58.29,61.31,72.41,71.66,61.17,63.24,57.67,68.56,68.01,68.65,72.64,72.31,69.29,74.89,77.96,73.57,72.94,77.95,75.14],
     x: [27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],
-    name: 'Andrea',
-    type: 'scatter'
+    name: "Andrea",
+    type: "scatter"
 };
 
 
 var trace2 = {
     y: [71.24,66.19,66.73,65.78,67.39,69.28,62.46,66.22,63.81,54.22,69.75,50.27,65.49,61.87,65.95,60.50,55.82,67.66,74.13],
     x: [27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],
-    name: 'Barbara',
-    type: 'scatter'
+    name: "Barbara",
+    type: "scatter"
 };
 
 var layout = {
     margin: {t:0,r:0,b:0,l:20},
     title: {
-        text:'Average weekly quote variance by staff',
+        text:"Average weekly quote vs manfacturing cost variance by staff",
         font: {
-          family: 'Arial',
+          family: "Arial",
           size: 24
         },
-        yref: 'paper',
+        yref: "paper",
         automargin: true,
       },
     xaxis: {
@@ -154,7 +154,7 @@ var layout = {
       title: {
         text: "Weeks",
         font: {
-            family: 'Arial',
+            family: "Arial",
             size: 18
           },
         standoff: 20
@@ -165,14 +165,14 @@ var layout = {
       title: {
         text: "Percentage",
         font: {
-            family: 'Arial',
+            family: "Arial",
             size: 18
           },
         standoff: 40
       }}} 
 
 var data = [trace1, trace2];
-Plotly.newPlot('lineChart', data, layout);
+Plotly.newPlot("lineChart", data, layout);
 
 
 
@@ -190,7 +190,7 @@ document.querySelector("#quoteForm").addEventListener("submit", function(e) {
 
     if (categoryQuote[material][size].inventory===0) {
         if (categoryQuote[material][size].isPopular===true) {
-            document.querySelector(".manufactureBoolean").innerHTML = "Start manufacturing immediately"
+            document.querySelector(".manufactureBoolean").innerHTML = "Item currently projected to be popular. Start manufacturing immediately"
         } else if (categoryQuote[material][size].isPopular===false) {
             document.querySelector(".manufactureBoolean").innerHTML = "Wait for quote confirmation by customer"
         }
