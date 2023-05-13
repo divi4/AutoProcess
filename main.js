@@ -1,15 +1,121 @@
+const categoryQuote = {"cotton":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "leather":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "silk":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "tweed":{"XS":{quote:201.38}, "S":{quote:264.97}, "M":{quote:221.68}, "L":{}, "XL":{}, "XXL":{}}, "wool":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}}
+
+fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) => {
+        buildCategoryQuoteObject(json)
+    });
+
+
+
+
+function buildCategoryQuoteObject(json) {
+    const orderAvg = {"cotton":{"XS":{materialTrend: false, sizeTrend:true}, "S":{materialTrend: false, sizeTrend:false}, "M":{materialTrend: false, sizeTrend:false}, "L":{materialTrend: false, sizeTrend:false}, "XL":{materialTrend: false, sizeTrend:true}, "XXL":{materialTrend: false, sizeTrend:true}}, "leather":{"XS":{materialTrend: true, sizeTrend:true}, "S":{materialTrend: true, sizeTrend:false}, "M":{materialTrend: true, sizeTrend:false}, "L":{materialTrend: true, sizeTrend:false}, "XL":{materialTrend: true, sizeTrend:true}, "XXL":{materialTrend: true, sizeTrend:true}}, "silk":{"XS":{materialTrend: true, sizeTrend:true}, "S":{materialTrend: true, sizeTrend:false}, "M":{materialTrend: true, sizeTrend:false}, "L":{materialTrend: true, sizeTrend:false}, "XL":{materialTrend: true, sizeTrend:true}, "XXL":{materialTrend: true, sizeTrend:true}}, "tweed":{"XS":{materialTrend: false, sizeTrend:true}, "S":{materialTrend: false, sizeTrend:false}, "M":{materialTrend: false, sizeTrend:false}, "L":{materialTrend: false, sizeTrend:false}, "XL":{materialTrend: false, sizeTrend:true}, "XXL":{materialTrend: false, sizeTrend:true}}, "wool":{"XS":{materialTrend: true, sizeTrend:true}, "S":{materialTrend: true, sizeTrend:false}, "M":{materialTrend: true, sizeTrend:false}, "L":{materialTrend: true, sizeTrend:false}, "XL":{materialTrend: true, sizeTrend:true}, "XXL":{materialTrend: true, sizeTrend:true}}}
+    let material = ["Cotton", "Leather", "Silk", "Tweed", "Wool"]
+    let size = ["XS", "S", "M", "L", "XL", "XXL"]
+    for (let i = 0; i < size.length; i++) {
+        for (let j = 0; j < material.length; j++) {
+            findAvgQuote(json, material[j], size[i])
+            findPopularity(json, material[j], size[i], orderAvg)
+            findInventory(categoryQuote, json, material[j], size[i])
+        }
+    }
+}
+
+
+
+
+function findAvgQuote(json, material, size) {
+    let totalSum = 0
+    let count = 0
+    for (let i = 0; i < json["Order History"].length; i++) {
+        if (json["Order History"][i]["Material"] ===material && json["Order History"][i]["Size"] ===size) {
+            totalSum += json["Order History"][i]["Quote amount"]
+            count += 1
+        }
+    }
+    average = totalSum/count
+
+    return populateAvgQuote(average, material, size)
+}
+
+
+function populateAvgQuote(average, material, size) {
+    categoryQuote[material.toLowerCase()][size].quote=average
+    return categoryQuote
+}
+
+
+function findPopularity(json, material, size, orderAvgInit) {
+    orderAvg = findCategoricalOrderAvg(json, material, size, orderAvgInit)
+    let averageOrderNum = findOverallOrderAvg(orderAvg, material, json)
+    isPopular(averageOrderNum, orderAvg, material, size)
+}
+
+
+function findCategoricalOrderAvg(json, material, size, orderAvg) {
+    let orderNum = 0
+    for (let i = 0; i < json["Order History"].length; i++) {
+        if (json["Order History"][i]["Material"] ===material && json["Order History"][i]["Size"] ===size) {
+            orderNum += 1
+        }
+    }
+    average = orderNum
+
+    return populateCategoricalOrderNumbers(average, material, size, orderAvg)
+}
+
+
+function populateCategoricalOrderNumbers(average, material, size, orderAvg) {
+    orderAvg[material.toLowerCase()][size].orderAverage = average
+    return orderAvg
+}
+
+
+function findOverallOrderAvg(orderAvg, material, json) {
+    let totalAvg = (json["Order History"].length)/((Object.keys(orderAvg).length) * (Object.keys(orderAvg[material.toLowerCase()]).length))
+    return totalAvg
+}
+
+
+function isPopular(averageOrderNum, orderAvg, material, size) {
+    if(orderAvg[material.toLowerCase()][size].orderAverage > averageOrderNum && (orderAvg[material.toLowerCase()][size].materialTrend === true || orderAvg[material.toLowerCase()][size].sizeTrend === true)) {
+        categoryQuote[material.toLowerCase()][size].isPopular = true
+    } else {
+        categoryQuote[material.toLowerCase()][size].isPopular = false
+    }
+    return categoryQuote
+}
+
+
+function findInventory(categoryQuote, json, material, size) {
+    categoryQuote[material.toLowerCase()][size].inventory = 0
+    for (let i = 0; i < json["Order History"].length; i++) {
+        if (json["Order History"][i]["Material"] ===material && json["Order History"][i]["Size"] ===size) {
+            if(json["Order History"][i]["Manufacturing cost ($)"]==="" || json["Order History"][i]["Manufacturing cost ($)"]===0) {
+                categoryQuote[material.toLowerCase()][size].inventory += 1
+            } else {
+                categoryQuote[material.toLowerCase()][size].inventory += 0
+            }
+        }
+    }
+    return categoryQuote
+}
+
+
 /* Task 1 */
 document.querySelector("#costForm").addEventListener("submit", function(e) {
     e.preventDefault();
-    var costForm = document.getElementById("costForm");
-    var staff = createStaffObject(costForm)
-    var annualCost = utilMonthToYearly(costForm) + findStaffSalary(staff) + costForm[15].valueAsNumber + findCasualHours(staff)
+    let costForm = document.getElementById("costForm");
+    let staff = createStaffObject(costForm)
+    let annualCost = utilMonthToYearly(costForm) + findStaffSalary(staff) + costForm[15].valueAsNumber + findCasualHours(staff)
     document.querySelector(".t1Output").innerHTML = "Annual outgoing cost: $"
     document.querySelector(".t1Output").innerHTML += annualCost
   })
 
+
 function createStaffObject(costForm) {
-    var staff = {
+    let staff = {
         andrea: {
             workHours: costForm[0].valueAsNumber,
             hourlyPay: costForm[3].valueAsNumber,
@@ -32,33 +138,38 @@ function createStaffObject(costForm) {
     return staff
 }
 
+
 function utilMonthToYearly (costForm) {
-    var yearMonths = 12
+    let yearMonths = 12
     return costForm[16].valueAsNumber * yearMonths
 }
+
 
 function findStaffSalary (staff) {
     return yearlyHours(staff)
 }
 
+
 function yearlyHours (staff) {
-    var workWeeks = 52
-    var andreaHours = staff.andrea.workHours * workWeeks
-    var barbaraHours = staff.barbara.workHours * workWeeks
-    var conradHours = staff.conrad.workHours * workWeeks
+    let workWeeks = 52
+    let andreaHours = staff.andrea.workHours * workWeeks
+    let barbaraHours = staff.barbara.workHours * workWeeks
+    let conradHours = staff.conrad.workHours * workWeeks
     return annualSalary(andreaHours, barbaraHours, conradHours, staff)
 }
 
+
 function annualSalary (andreaHours, barbaraHours, conradHours, staff) {
-    var andreaPay = andreaHours * staff.andrea.hourlyPay
-    var barbaraPay = barbaraHours * staff.barbara.hourlyPay
-    var conradPay = conradHours * staff.conrad.hourlyPay
+    let andreaPay = andreaHours * staff.andrea.hourlyPay
+    let barbaraPay = barbaraHours * staff.barbara.hourlyPay
+    let conradPay = conradHours * staff.conrad.hourlyPay
     return andreaPay + barbaraPay + conradPay
 }
 
+
 function findCasualHours(staff) {
-    var staffKeys = [staff.andrea, staff.barbara, staff.conrad]
-    var casualHours = 0
+    let staffKeys = [staff.andrea, staff.barbara, staff.conrad]
+    let casualHours = 0
     for (let i = 0; i < staffKeys.length; i++) {
         if (staffKeys[i].isTakingLeave==="yes") {
             casualHours += staffKeys[i].workHours
@@ -67,10 +178,12 @@ function findCasualHours(staff) {
     return findCasualAnnualSalary(casualHours, staff)
 }
 
+
 function findCasualAnnualSalary(casualHours, staff) {
-    var casualWeeks = 4
+    let casualWeeks = 4
     return (casualHours * staff.casual.hourlyPay) * casualWeeks
 }
+
 
 /* Task 2 */
 /* Boxplot */
@@ -83,13 +196,11 @@ var trace1 = {
   type: "box"
 };
 
-
 var trace2 = {
   y: y1,
   name: "Barbara",
   type: "box"
 };
-
 
 var data = [trace1, trace2];
 
@@ -128,7 +239,6 @@ var trace1 = {
     name: "Andrea",
     type: "scatter"
 };
-
 
 var trace2 = {
     y: [71.24,66.19,66.73,65.78,67.39,69.28,62.46,66.22,63.81,54.22,69.75,50.27,65.49,61.87,65.95,60.50,55.82,67.66,74.13],
@@ -177,16 +287,13 @@ Plotly.newPlot("lineChart", data, layout);
 
 
 /* Task 3 */
-var material = document.getElementById("quoteForm")
-console.log(material)
-
 document.querySelector("#quoteForm").addEventListener("submit", function(e) {
     e.preventDefault();
-    var material = document.getElementById("quoteForm")[1].value
-    var size = document.getElementById("quoteForm")[3].value
+    let material = document.getElementById("quoteForm")[1].value
+    let size = document.getElementById("quoteForm")[3].value.toUpperCase()
     
     document.querySelector(".quote3output").innerHTML = "Quote: $0"
-    document.querySelector(".quote3output").innerHTML = "Quote: $" +  categoryQuote[material][size].quote  // Allows to dynamically resolve object property names
+    document.querySelector(".quote3output").innerHTML = `Quote: $${categoryQuote[material][size].quote}`
 
     if (categoryQuote[material][size].inventory===0) {
         if (categoryQuote[material][size].isPopular===true) {
@@ -202,170 +309,5 @@ document.querySelector("#quoteForm").addEventListener("submit", function(e) {
         } else if (categoryQuote[material][size].inventory>=7) {
             document.querySelector(".inventoryLevels").innerHTML = "Inventory: High levels of this stock available"
         }
-        
     }
-
 })
-
-categoryQuote = {
-    cotton: {
-        xs: {
-            quote : 70.20,
-            isPopular: true,
-            inventory: 0
-        },
-        s: {
-            quote : 67.07,
-            isPopular: false,
-            inventory: 0
-        },
-        m: {
-            quote: 77.58,
-            isPopular: false,
-            inventory: 0
-        },
-        l: {
-            quote: 76.85,
-            isPopular: false,
-            inventory: 0
-        },
-        xl: {
-            quote: 80.98,
-            isPopular: true,
-            inventory: 0
-        },
-        xxl: {
-            quote: 96.83,
-            isPopular: true,
-            inventory: 0
-        }
-    },
-    leather: {
-        xs: {
-            quote : 148.66,
-            isPopular: true,
-            inventory: 0
-        },
-        s: {
-            quote : 178.34,
-            isPopular: false,
-            inventory: 0
-        },
-        m: {
-            quote: 153.43,
-            isPopular: false,
-            inventory: 0
-        },
-        l: {
-            quote: 173.97,
-            isPopular: false,
-            inventory: 0
-        },
-        xl: {
-            quote: 206.80,
-            isPopular: true,
-            inventory: 0
-        },
-        xxl: {
-            quote: 188.65,
-            isPopular: false,
-            inventory: 0
-        }
-    },
-    silk: {
-        xs: {
-            quote : 427.80,
-            isPopular: false,
-            inventory: 0
-        },
-        s: {
-            quote : 515.60,
-            isPopular: false,
-            inventory: 0
-        },
-        m: {
-            quote: 497.93,
-            isPopular: false,
-            inventory: 0
-        },
-        l: {
-            quote: 396.15,
-            isPopular: false,
-            inventory: 0
-        },
-        xl: {
-            quote: 650.72,
-            isPopular: false,
-            inventory: 0
-        },
-        xxl: {
-            quote: 668.87,
-            isPopular: false,
-            inventory: 0
-        }
-    },
-    tweed: {
-        xs: {
-            quote : 201.38,
-            isPopular: false,
-            inventory: 0
-        },
-        s: {
-            quote : 264.97,
-            isPopular: false,
-            inventory: 0
-        },
-        m: {
-            quote: 221.68,
-            isPopular: false,
-            inventory: 0
-        },
-        l: {
-            quote: 226.68,
-            isPopular: false,
-            inventory: 0
-        },
-        xl: {
-            quote: 212.20,
-            isPopular: false,
-            inventory: 0
-        },
-        xxl: {
-            quote: 279.33,
-            isPopular: false,
-            inventory: 0
-        }
-    },
-    wool: {
-        xs: {
-            quote : 124.22,
-            isPopular: true,
-            inventory: 0
-        },
-        s: {
-            quote : 163.44,
-            isPopular: false,
-            inventory: 0
-        },
-        m: {
-            quote: 136.74,
-            isPopular: true,
-            inventory: 0
-        },
-        l: {
-            quote: 139.82,
-            isPopular: true,
-            inventory: 0
-        },
-        xl: {
-            quote: 146.48,
-            isPopular: true,
-            inventory: 0
-        },
-        xxl: {
-            quote: 172.96,
-            isPopular: true,
-            inventory: 0
-        }
-    }
-}

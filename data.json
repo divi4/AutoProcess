@@ -1,0 +1,2134 @@
+{
+  "Order History": [
+    {
+      "Quote date": "2022-07-01",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 95.3,
+      "Manufacturing cost ($)": 26.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7240293809024134
+    },
+    {
+      "Quote date": "2022-07-01",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 73.4,
+      "Manufacturing cost ($)": 24,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.673024523160763
+    },
+    {
+      "Quote date": "2022-07-01",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 112,
+      "Manufacturing cost ($)": 29.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7401785714285715
+    },
+    {
+      "Quote date": "2022-07-04",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 77.2,
+      "Manufacturing cost ($)": 32.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.582901554404145
+    },
+    {
+      "Quote date": "2022-07-04",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 77.2,
+      "Manufacturing cost ($)": 46.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.4015544041450777
+    },
+    {
+      "Quote date": "2022-07-05",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 77.2,
+      "Manufacturing cost ($)": 25.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6735751295336787
+    },
+    {
+      "Quote date": "2022-07-06",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 77.1,
+      "Manufacturing cost ($)": 25,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.675745784695201
+    },
+    {
+      "Quote date": "2022-07-06",
+      "Material": "Tweed",
+      "Size": "L",
+      "Quote amount": 218.3,
+      "Manufacturing cost ($)": 75.3,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6550618415025194
+    },
+    {
+      "Quote date": "2022-07-06",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 76,
+      "Manufacturing cost ($)": 29.4,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6131578947368421
+    },
+    {
+      "Quote date": "2022-07-07",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 64,
+      "Manufacturing cost ($)": 20.1,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6859375
+    },
+    {
+      "Quote date": "2022-07-07",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 111.4,
+      "Manufacturing cost ($)": 44,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6050269299820467
+    },
+    {
+      "Quote date": "2022-07-08",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 122.2,
+      "Manufacturing cost ($)": 32.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7364975450081833
+    },
+    {
+      "Quote date": "2022-07-11",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 189.2,
+      "Manufacturing cost ($)": 53.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.718816067653277
+    },
+    {
+      "Quote date": "2022-07-11",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 202,
+      "Manufacturing cost ($)": 67.4,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6663366336633663
+    },
+    {
+      "Quote date": "2022-07-11",
+      "Material": "Tweed",
+      "Size": "XXL",
+      "Quote amount": 257.2,
+      "Manufacturing cost ($)": 90.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6493001555209954
+    },
+    {
+      "Quote date": "2022-07-12",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 62.1,
+      "Manufacturing cost ($)": 23,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6296296296296297
+    },
+    {
+      "Quote date": "2022-07-12",
+      "Material": "Silk",
+      "Size": "XS",
+      "Quote amount": 364.3,
+      "Manufacturing cost ($)": 72.3,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.8015371946198188
+    },
+    {
+      "Quote date": "2022-07-13",
+      "Material": "Silk",
+      "Size": "L",
+      "Quote amount": 371,
+      "Manufacturing cost ($)": 105.1,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7167115902964959
+    },
+    {
+      "Quote date": "2022-07-14",
+      "Material": "Silk",
+      "Size": "M",
+      "Quote amount": 316.2,
+      "Manufacturing cost ($)": 94.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7020872865275143
+    },
+    {
+      "Quote date": "2022-07-14",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 124.2,
+      "Manufacturing cost ($)": 47.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6199677938808373
+    },
+    {
+      "Quote date": "2022-07-14",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 114.4,
+      "Manufacturing cost ($)": 42,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6328671328671329
+    },
+    {
+      "Quote date": "2022-07-14",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 173.2,
+      "Manufacturing cost ($)": 53.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6928406466512702
+    },
+    {
+      "Quote date": "2022-07-15",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 105.1,
+      "Manufacturing cost ($)": 47,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5528068506184586
+    },
+    {
+      "Quote date": "2022-07-15",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 156,
+      "Manufacturing cost ($)": 38.4,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7538461538461538
+    },
+    {
+      "Quote date": "2022-07-18",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 87.3,
+      "Manufacturing cost ($)": 32.3,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6300114547537228
+    },
+    {
+      "Quote date": "2022-07-19",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 71,
+      "Manufacturing cost ($)": 19.1,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7309859154929578
+    },
+    {
+      "Quote date": "2022-07-20",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 69.2,
+      "Manufacturing cost ($)": 18.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7369942196531791
+    },
+    {
+      "Quote date": "2022-07-20",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 180.4,
+      "Manufacturing cost ($)": 42,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7671840354767184
+    },
+    {
+      "Quote date": "2022-07-20",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 98.2,
+      "Manufacturing cost ($)": 42.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.570264765784114
+    },
+    {
+      "Quote date": "2022-07-20",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 90.2,
+      "Manufacturing cost ($)": 34.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6208425720620843
+    },
+    {
+      "Quote date": "2022-07-21",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 119,
+      "Manufacturing cost ($)": 51.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5680672268907563
+    },
+    {
+      "Quote date": "2022-07-21",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 147.1,
+      "Manufacturing cost ($)": 33,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7756628144119646
+    },
+    {
+      "Quote date": "2022-07-22",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 74.3,
+      "Manufacturing cost ($)": 32.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5652759084791387
+    },
+    {
+      "Quote date": "2022-07-25",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 72,
+      "Manufacturing cost ($)": 31.1,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5680555555555555
+    },
+    {
+      "Quote date": "2022-07-25",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 92.2,
+      "Manufacturing cost ($)": 43.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5314533622559653
+    },
+    {
+      "Quote date": "2022-07-25",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 116.4,
+      "Manufacturing cost ($)": 55,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5274914089347079
+    },
+    {
+      "Quote date": "2022-07-26",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 100.2,
+      "Manufacturing cost ($)": 33.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6686626746506986
+    },
+    {
+      "Quote date": "2022-07-26",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 182.2,
+      "Manufacturing cost ($)": 43.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7628979143798025
+    },
+    {
+      "Quote date": "2022-07-27",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 102.1,
+      "Manufacturing cost ($)": 34,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6669931439764936
+    },
+    {
+      "Quote date": "2022-07-27",
+      "Material": "Silk",
+      "Size": "XL",
+      "Quote amount": 505,
+      "Manufacturing cost ($)": 116.4,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7695049504950495
+    },
+    {
+      "Quote date": "2022-07-28",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 196.3,
+      "Manufacturing cost ($)": 42.3,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7845134997452878
+    },
+    {
+      "Quote date": "2022-07-29",
+      "Material": "Tweed",
+      "Size": "XXL",
+      "Quote amount": 211.4,
+      "Manufacturing cost ($)": 94,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5553453169347209
+    },
+    {
+      "Quote date": "2022-07-29",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 155,
+      "Manufacturing cost ($)": 63.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5929032258064516
+    },
+    {
+      "Quote date": "2022-08-01",
+      "Material": "Tweed",
+      "Size": "L",
+      "Quote amount": 195.2,
+      "Manufacturing cost ($)": 80.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5891393442622951
+    },
+    {
+      "Quote date": "2022-08-02",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 97.2,
+      "Manufacturing cost ($)": 35.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6378600823045267
+    },
+    {
+      "Quote date": "2022-08-03",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 75,
+      "Manufacturing cost ($)": 32.4,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.5680000000000001
+    },
+    {
+      "Quote date": "2022-08-03",
+      "Material": "Silk",
+      "Size": "L",
+      "Quote amount": 421.3,
+      "Manufacturing cost ($)": 116.3,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7239496795632566
+    },
+    {
+      "Quote date": "2022-08-03",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 95.2,
+      "Manufacturing cost ($)": 44.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.5357142857142857
+    },
+    {
+      "Quote date": "2022-08-03",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 124.1,
+      "Manufacturing cost ($)": 46,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6293311845286059
+    },
+    {
+      "Quote date": "2022-08-04",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 89.4,
+      "Manufacturing cost ($)": 19,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7874720357941835
+    },
+    {
+      "Quote date": "2022-08-04",
+      "Material": "Silk",
+      "Size": "S",
+      "Quote amount": 337,
+      "Manufacturing cost ($)": 89.1,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7356083086053412
+    },
+    {
+      "Quote date": "2022-08-05",
+      "Material": "Cotton",
+      "Size": "L",
+      "Quote amount": 86.2,
+      "Manufacturing cost ($)": 29.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.6612529002320185
+    },
+    {
+      "Quote date": "2022-08-05",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 99.2,
+      "Manufacturing cost ($)": 19.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.8064516129032258
+    },
+    {
+      "Quote date": "2022-08-05",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 198.2,
+      "Manufacturing cost ($)": 42.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7870837537840566
+    },
+    {
+      "Quote date": "2022-08-08",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 78.1,
+      "Manufacturing cost ($)": 30,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.615877080665813
+    },
+    {
+      "Quote date": "2022-08-08",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 120.3,
+      "Manufacturing cost ($)": 55.3,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5403158769742311
+    },
+    {
+      "Quote date": "2022-08-08",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 136,
+      "Manufacturing cost ($)": 66.4,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5117647058823529
+    },
+    {
+      "Quote date": "2022-08-09",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 86.4,
+      "Manufacturing cost ($)": 31,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6412037037037037
+    },
+    {
+      "Quote date": "2022-08-09",
+      "Material": "Leather",
+      "Size": "XXL",
+      "Quote amount": 266,
+      "Manufacturing cost ($)": 74.1,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7214285714285714
+    },
+    {
+      "Quote date": "2022-08-09",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 127.2,
+      "Manufacturing cost ($)": 63.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.5031446540880503
+    },
+    {
+      "Quote date": "2022-08-10",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 89.2,
+      "Manufacturing cost ($)": 34.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6165919282511211
+    },
+    {
+      "Quote date": "2022-08-10",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 78.2,
+      "Manufacturing cost ($)": 25.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6777493606138107
+    },
+    {
+      "Quote date": "2022-08-11",
+      "Material": "Cotton",
+      "Size": "L",
+      "Quote amount": 68.1,
+      "Manufacturing cost ($)": 28,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5888399412628487
+    },
+    {
+      "Quote date": "2022-08-11",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 72.3,
+      "Manufacturing cost ($)": 19.3,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7330567081604427
+    },
+    {
+      "Quote date": "2022-08-11",
+      "Material": "Leather",
+      "Size": "L",
+      "Quote amount": 147,
+      "Manufacturing cost ($)": 62.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5755102040816326
+    },
+    {
+      "Quote date": "2022-08-12",
+      "Material": "Silk",
+      "Size": "M",
+      "Quote amount": 248,
+      "Manufacturing cost ($)": 102.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5883064516129033
+    },
+    {
+      "Quote date": "2022-08-12",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 159.4,
+      "Manufacturing cost ($)": 65,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5922208281053952
+    },
+    {
+      "Quote date": "2022-08-15",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 65.2,
+      "Manufacturing cost ($)": 22.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6595092024539877
+    },
+    {
+      "Quote date": "2022-08-15",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 236.2,
+      "Manufacturing cost ($)": 63.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7324301439458086
+    },
+    {
+      "Quote date": "2022-08-16",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 81.1,
+      "Manufacturing cost ($)": 24,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7040690505548705
+    },
+    {
+      "Quote date": "2022-08-16",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 174.2,
+      "Manufacturing cost ($)": 39.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7749712973593571
+    },
+    {
+      "Quote date": "2022-08-16",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 205.3,
+      "Manufacturing cost ($)": 40.3,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.8037018996590355
+    },
+    {
+      "Quote date": "2022-08-16",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 117,
+      "Manufacturing cost ($)": 46.4,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6034188034188034
+    },
+    {
+      "Quote date": "2022-08-17",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 195,
+      "Manufacturing cost ($)": 47.1,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7584615384615385
+    },
+    {
+      "Quote date": "2022-08-18",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 60.2,
+      "Manufacturing cost ($)": 19.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6810631229235881
+    },
+    {
+      "Quote date": "2022-08-18",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 156.4,
+      "Manufacturing cost ($)": 48,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6930946291560103
+    },
+    {
+      "Quote date": "2022-08-18",
+      "Material": "Tweed",
+      "Size": "XL",
+      "Quote amount": 205.2,
+      "Manufacturing cost ($)": 92.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.550682261208577
+    },
+    {
+      "Quote date": "2022-08-18",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 152.2,
+      "Manufacturing cost ($)": 50.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6701708278580815
+    },
+    {
+      "Quote date": "2022-08-19",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 65.3,
+      "Manufacturing cost ($)": 18.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7197549770290965
+    },
+    {
+      "Quote date": "2022-08-19",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 186,
+      "Manufacturing cost ($)": 64.4,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.653763440860215
+    },
+    {
+      "Quote date": "2022-08-19",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 135.1,
+      "Manufacturing cost ($)": 58,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5706883789785344
+    },
+    {
+      "Quote date": "2022-08-22",
+      "Material": "Leather",
+      "Size": "M",
+      "Quote amount": 205.4,
+      "Manufacturing cost ($)": 51,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7517039922103214
+    },
+    {
+      "Quote date": "2022-08-22",
+      "Material": "Silk",
+      "Size": "S",
+      "Quote amount": 480,
+      "Manufacturing cost ($)": 92.1,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.808125
+    },
+    {
+      "Quote date": "2022-08-23",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 153.2,
+      "Manufacturing cost ($)": 59.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6135770234986945
+    },
+    {
+      "Quote date": "2022-08-24",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 118.2,
+      "Manufacturing cost ($)": 47.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6006768189509306
+    },
+    {
+      "Quote date": "2022-08-25",
+      "Material": "Cotton",
+      "Size": "L",
+      "Quote amount": 81.2,
+      "Manufacturing cost ($)": 28.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6527093596059113
+    },
+    {
+      "Quote date": "2022-08-25",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 63.1,
+      "Manufacturing cost ($)": 23,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6354992076069731
+    },
+    {
+      "Quote date": "2022-08-25",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 128,
+      "Manufacturing cost ($)": 48.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.621875
+    },
+    {
+      "Quote date": "2022-08-26",
+      "Material": "Cotton",
+      "Size": "L",
+      "Quote amount": 88.3,
+      "Manufacturing cost ($)": 28.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.6795016987542469
+    },
+    {
+      "Quote date": "2022-08-29",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 219.4,
+      "Manufacturing cost ($)": 47,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7857793983591613
+    },
+    {
+      "Quote date": "2022-08-29",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 131,
+      "Manufacturing cost ($)": 46.1,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6480916030534352
+    },
+    {
+      "Quote date": "2022-08-30",
+      "Material": "Silk",
+      "Size": "XXL",
+      "Quote amount": 573.2,
+      "Manufacturing cost ($)": 138.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7588974180041871
+    },
+    {
+      "Quote date": "2022-08-30",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 128.2,
+      "Manufacturing cost ($)": 52.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.5928237129485179
+    },
+    {
+      "Quote date": "2022-08-30",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 108.2,
+      "Manufacturing cost ($)": 38.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6469500924214417
+    },
+    {
+      "Quote date": "2022-08-31",
+      "Material": "Tweed",
+      "Size": "L",
+      "Quote amount": 270,
+      "Manufacturing cost ($)": 87.4,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6762962962962963
+    },
+    {
+      "Quote date": "2022-08-31",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 148.1,
+      "Manufacturing cost ($)": 50,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.662390276839973
+    },
+    {
+      "Quote date": "2022-09-01",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 145.3,
+      "Manufacturing cost ($)": 61.3,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.578114246386786
+    },
+    {
+      "Quote date": "2022-09-02",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 34,
+      "Manufacturing cost ($)": 22.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.35
+    },
+    {
+      "Quote date": "2022-09-02",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 32.4,
+      "Manufacturing cost ($)": 18,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.4444444444444444
+    },
+    {
+      "Quote date": "2022-09-05",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 82.2,
+      "Manufacturing cost ($)": 24.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7055961070559611
+    },
+    {
+      "Quote date": "2022-09-05",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 176.2,
+      "Manufacturing cost ($)": 36.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7945516458569808
+    },
+    {
+      "Quote date": "2022-09-05",
+      "Material": "Silk",
+      "Size": "M",
+      "Quote amount": 479.2,
+      "Manufacturing cost ($)": 100.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7909015025041737
+    },
+    {
+      "Quote date": "2022-09-05",
+      "Material": "Silk",
+      "Size": "XXL",
+      "Quote amount": 620,
+      "Manufacturing cost ($)": 145.4,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.765483870967742
+    },
+    {
+      "Quote date": "2022-09-06",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 93,
+      "Manufacturing cost ($)": 34.1,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6333333333333333
+    },
+    {
+      "Quote date": "2022-09-06",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 191.1,
+      "Manufacturing cost ($)": 36,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.8116169544740973
+    },
+    {
+      "Quote date": "2022-09-06",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 178.3,
+      "Manufacturing cost ($)": 74.3,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.5832865956253506
+    },
+    {
+      "Quote date": "2022-09-07",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 80.2,
+      "Manufacturing cost ($)": 24.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6982543640897755
+    },
+    {
+      "Quote date": "2022-09-07",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 179.4,
+      "Manufacturing cost ($)": 37,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7937569676700111
+    },
+    {
+      "Quote date": "2022-09-07",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 182.2,
+      "Manufacturing cost ($)": 36.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8013172338090011
+    },
+    {
+      "Quote date": "2022-09-07",
+      "Material": "Silk",
+      "Size": "XL",
+      "Quote amount": 646.2,
+      "Manufacturing cost ($)": 126.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8047044258743422
+    },
+    {
+      "Quote date": "2022-09-08",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 140,
+      "Manufacturing cost ($)": 54.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6114285714285714
+    },
+    {
+      "Quote date": "2022-09-09",
+      "Material": "Leather",
+      "Size": "L",
+      "Quote amount": 125.3,
+      "Manufacturing cost ($)": 52.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5826017557861134
+    },
+    {
+      "Quote date": "2022-09-09",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 144.1,
+      "Manufacturing cost ($)": 59,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5905621096460791
+    },
+    {
+      "Quote date": "2022-09-12",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 169,
+      "Manufacturing cost ($)": 67.1,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6029585798816568
+    },
+    {
+      "Quote date": "2022-09-13",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 232.4,
+      "Manufacturing cost ($)": 59,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7461273666092944
+    },
+    {
+      "Quote date": "2022-09-13",
+      "Material": "Leather",
+      "Size": "XXL",
+      "Quote amount": 250.2,
+      "Manufacturing cost ($)": 63.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7474020783373302
+    },
+    {
+      "Quote date": "2022-09-14",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 126.2,
+      "Manufacturing cost ($)": 42.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6656101426307448
+    },
+    {
+      "Quote date": "2022-09-14",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 194.2,
+      "Manufacturing cost ($)": 76.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.607621009268795
+    },
+    {
+      "Quote date": "2022-09-15",
+      "Material": "Leather",
+      "Size": "M",
+      "Quote amount": 105.1,
+      "Manufacturing cost ($)": 45,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.571836346336822
+    },
+    {
+      "Quote date": "2022-09-15",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 143.3,
+      "Manufacturing cost ($)": 59.3,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5861828332170272
+    },
+    {
+      "Quote date": "2022-09-15",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 56,
+      "Manufacturing cost ($)": 42.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.24285714285714288
+    },
+    {
+      "Quote date": "2022-09-16",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 64,
+      "Manufacturing cost ($)": 42.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.3421875
+    },
+    {
+      "Quote date": "2022-09-19",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 241.4,
+      "Manufacturing cost ($)": 55,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.772162386081193
+    },
+    {
+      "Quote date": "2022-09-19",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 182.2,
+      "Manufacturing cost ($)": 77.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5762897914379802
+    },
+    {
+      "Quote date": "2022-09-20",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 70.2,
+      "Manufacturing cost ($)": 18.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7407407407407407
+    },
+    {
+      "Quote date": "2022-09-20",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 77.1,
+      "Manufacturing cost ($)": 23,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7016861219195849
+    },
+    {
+      "Quote date": "2022-09-20",
+      "Material": "Leather",
+      "Size": "M",
+      "Quote amount": 215.2,
+      "Manufacturing cost ($)": 44.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7946096654275093
+    },
+    {
+      "Quote date": "2022-09-20",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 148,
+      "Manufacturing cost ($)": 51.4,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6527027027027027
+    },
+    {
+      "Quote date": "2022-09-21",
+      "Material": "Silk",
+      "Size": "XS",
+      "Quote amount": 491.3,
+      "Manufacturing cost ($)": 82.3,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8324852432322409
+    },
+    {
+      "Quote date": "2022-09-21",
+      "Material": "Silk",
+      "Size": "M",
+      "Quote amount": 607.2,
+      "Manufacturing cost ($)": 105.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8267457180500659
+    },
+    {
+      "Quote date": "2022-09-21",
+      "Material": "Tweed",
+      "Size": "XXL",
+      "Quote amount": 369.4,
+      "Manufacturing cost ($)": 112,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6968056307525717
+    },
+    {
+      "Quote date": "2022-09-21",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 187,
+      "Manufacturing cost ($)": 78.1,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.5823529411764706
+    },
+    {
+      "Quote date": "2022-09-22",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 62.2,
+      "Manufacturing cost ($)": 35.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.4340836012861736
+    },
+    {
+      "Quote date": "2022-09-23",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 72,
+      "Manufacturing cost ($)": 23.4,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.675
+    },
+    {
+      "Quote date": "2022-09-23",
+      "Material": "Cotton",
+      "Size": "L",
+      "Quote amount": 67.1,
+      "Manufacturing cost ($)": 26,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.6125186289120715
+    },
+    {
+      "Quote date": "2022-09-23",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 131.2,
+      "Manufacturing cost ($)": 55.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5792682926829268
+    },
+    {
+      "Quote date": "2022-09-26",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 78.4,
+      "Manufacturing cost ($)": 22,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7193877551020408
+    },
+    {
+      "Quote date": "2022-09-26",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 141.3,
+      "Manufacturing cost ($)": 45.3,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6794055201698515
+    },
+    {
+      "Quote date": "2022-09-26",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 197,
+      "Manufacturing cost ($)": 80.1,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.5934010152284265
+    },
+    {
+      "Quote date": "2022-09-27",
+      "Material": "Silk",
+      "Size": "XL",
+      "Quote amount": 655.2,
+      "Manufacturing cost ($)": 131.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7997557997557997
+    },
+    {
+      "Quote date": "2022-09-28",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 95.2,
+      "Manufacturing cost ($)": 29.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6932773109243697
+    },
+    {
+      "Quote date": "2022-09-28",
+      "Material": "Leather",
+      "Size": "L",
+      "Quote amount": 220.2,
+      "Manufacturing cost ($)": 53.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7584014532243415
+    },
+    {
+      "Quote date": "2022-09-29",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 51.1,
+      "Manufacturing cost ($)": 21,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.589041095890411
+    },
+    {
+      "Quote date": "2022-09-29",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 144,
+      "Manufacturing cost ($)": 64.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5527777777777777
+    },
+    {
+      "Quote date": "2022-09-30",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 68,
+      "Manufacturing cost ($)": 22.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.6749999999999999
+    },
+    {
+      "Quote date": "2022-09-30",
+      "Material": "Leather",
+      "Size": "XXL",
+      "Quote amount": 128.3,
+      "Manufacturing cost ($)": 59.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5378020265003898
+    },
+    {
+      "Quote date": "2022-09-30",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 78.4,
+      "Manufacturing cost ($)": 33,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5790816326530612
+    },
+    {
+      "Quote date": "2022-09-30",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 76.2,
+      "Manufacturing cost ($)": 33.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5643044619422573
+    },
+    {
+      "Quote date": "2022-10-03",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 84.2,
+      "Manufacturing cost ($)": 21.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7482185273159144
+    },
+    {
+      "Quote date": "2022-10-03",
+      "Material": "Silk",
+      "Size": "S",
+      "Quote amount": 588.2,
+      "Manufacturing cost ($)": 104.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.8228493709622577
+    },
+    {
+      "Quote date": "2022-10-04",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 103,
+      "Manufacturing cost ($)": 31.4,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6951456310679611
+    },
+    {
+      "Quote date": "2022-10-04",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 183.1,
+      "Manufacturing cost ($)": 34,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.8143091206990716
+    },
+    {
+      "Quote date": "2022-10-04",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 189.3,
+      "Manufacturing cost ($)": 40.3,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7871104067617538
+    },
+    {
+      "Quote date": "2022-10-05",
+      "Material": "Leather",
+      "Size": "L",
+      "Quote amount": 232,
+      "Manufacturing cost ($)": 49.1,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7883620689655173
+    },
+    {
+      "Quote date": "2022-10-05",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 174.4,
+      "Manufacturing cost ($)": 34,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.805045871559633
+    },
+    {
+      "Quote date": "2022-10-06",
+      "Material": "Cotton",
+      "Size": "L",
+      "Quote amount": 70.2,
+      "Manufacturing cost ($)": 27.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6125356125356125
+    },
+    {
+      "Quote date": "2022-10-06",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 106,
+      "Manufacturing cost ($)": 39.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6283018867924528
+    },
+    {
+      "Quote date": "2022-10-06",
+      "Material": "Tweed",
+      "Size": "L",
+      "Quote amount": 223.2,
+      "Manufacturing cost ($)": 96.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5689964157706093
+    },
+    {
+      "Quote date": "2022-10-06",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 119.2,
+      "Manufacturing cost ($)": 45.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6208053691275167
+    },
+    {
+      "Quote date": "2022-10-07",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 72.1,
+      "Manufacturing cost ($)": 21,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7087378640776699
+    },
+    {
+      "Quote date": "2022-10-07",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 95.3,
+      "Manufacturing cost ($)": 32.3,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.6610703043022036
+    },
+    {
+      "Quote date": "2022-10-07",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 131,
+      "Manufacturing cost ($)": 60.1,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5412213740458016
+    },
+    {
+      "Quote date": "2022-10-10",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 82.4,
+      "Manufacturing cost ($)": 23,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.720873786407767
+    },
+    {
+      "Quote date": "2022-10-10",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 86.2,
+      "Manufacturing cost ($)": 22.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7424593967517401
+    },
+    {
+      "Quote date": "2022-10-10",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 78.2,
+      "Manufacturing cost ($)": 20.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7416879795396419
+    },
+    {
+      "Quote date": "2022-10-10",
+      "Material": "Silk",
+      "Size": "XL",
+      "Quote amount": 685.2,
+      "Manufacturing cost ($)": 138.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7983070636310565
+    },
+    {
+      "Quote date": "2022-10-11",
+      "Material": "Silk",
+      "Size": "M",
+      "Quote amount": 644,
+      "Manufacturing cost ($)": 113.4,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.8239130434782609
+    },
+    {
+      "Quote date": "2022-10-11",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 155.3,
+      "Manufacturing cost ($)": 47.3,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6954282034771411
+    },
+    {
+      "Quote date": "2022-10-11",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 217.1,
+      "Manufacturing cost ($)": 81,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.6269000460617227
+    },
+    {
+      "Quote date": "2022-10-12",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 235,
+      "Manufacturing cost ($)": 51.1,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7825531914893618
+    },
+    {
+      "Quote date": "2022-10-12",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 155.4,
+      "Manufacturing cost ($)": 46,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.703989703989704
+    },
+    {
+      "Quote date": "2022-10-13",
+      "Material": "Cotton",
+      "Size": "M",
+      "Quote amount": 65.2,
+      "Manufacturing cost ($)": 22.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6595092024539877
+    },
+    {
+      "Quote date": "2022-10-13",
+      "Material": "Leather",
+      "Size": "XXL",
+      "Quote amount": 122.2,
+      "Manufacturing cost ($)": 59.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5155482815057283
+    },
+    {
+      "Quote date": "2022-10-13",
+      "Material": "Tweed",
+      "Size": "XL",
+      "Quote amount": 219.2,
+      "Manufacturing cost ($)": 107.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.510948905109489
+    },
+    {
+      "Quote date": "2022-10-14",
+      "Material": "Leather",
+      "Size": "XXL",
+      "Quote amount": 119,
+      "Manufacturing cost ($)": 57.4,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5176470588235295
+    },
+    {
+      "Quote date": "2022-10-14",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 158.1,
+      "Manufacturing cost ($)": 72,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.5445920303605313
+    },
+    {
+      "Quote date": "2022-10-17",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 102.4,
+      "Manufacturing cost ($)": 31,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.697265625
+    },
+    {
+      "Quote date": "2022-10-17",
+      "Material": "Leather",
+      "Size": "L",
+      "Quote amount": 220.3,
+      "Manufacturing cost ($)": 47.3,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7852927825692237
+    },
+    {
+      "Quote date": "2022-10-17",
+      "Material": "Leather",
+      "Size": "XXL",
+      "Quote amount": 246.2,
+      "Manufacturing cost ($)": 58.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7636068237205524
+    },
+    {
+      "Quote date": "2022-10-17",
+      "Material": "Wool",
+      "Size": "L",
+      "Quote amount": 196,
+      "Manufacturing cost ($)": 70.1,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6423469387755102
+    },
+    {
+      "Quote date": "2022-10-18",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 97.2,
+      "Manufacturing cost ($)": 28.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7098765432098765
+    },
+    {
+      "Quote date": "2022-10-18",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 176,
+      "Manufacturing cost ($)": 31.4,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.821590909090909
+    },
+    {
+      "Quote date": "2022-10-18",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 162.2,
+      "Manufacturing cost ($)": 48.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7028360049321825
+    },
+    {
+      "Quote date": "2022-10-18",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 160.1,
+      "Manufacturing cost ($)": 46,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7126795752654591
+    },
+    {
+      "Quote date": "2022-10-19",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 218.3,
+      "Manufacturing cost ($)": 76.3,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6504809894640403
+    },
+    {
+      "Quote date": "2022-10-20",
+      "Material": "Cotton",
+      "Size": "XL",
+      "Quote amount": 73.4,
+      "Manufacturing cost ($)": 28,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.6185286103542235
+    },
+    {
+      "Quote date": "2022-10-20",
+      "Material": "Leather",
+      "Size": "L",
+      "Quote amount": 99,
+      "Manufacturing cost ($)": 47.1,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5242424242424242
+    },
+    {
+      "Quote date": "2022-10-21",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 177.2,
+      "Manufacturing cost ($)": 47.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7336343115124154
+    },
+    {
+      "Quote date": "2022-10-21",
+      "Material": "Wool",
+      "Size": "XXL",
+      "Quote amount": 169.2,
+      "Manufacturing cost ($)": 87.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.48463356973995264
+    },
+    {
+      "Quote date": "2022-10-24",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 104.2,
+      "Manufacturing cost ($)": 31.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7005758157389635
+    },
+    {
+      "Quote date": "2022-10-24",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 74,
+      "Manufacturing cost ($)": 17.4,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7648648648648649
+    },
+    {
+      "Quote date": "2022-10-24",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 231.3,
+      "Manufacturing cost ($)": 49.3,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.7868568958063121
+    },
+    {
+      "Quote date": "2022-10-24",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 192.1,
+      "Manufacturing cost ($)": 62,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.6772514315460697
+    },
+    {
+      "Quote date": "2022-10-25",
+      "Material": "Silk",
+      "Size": "XL",
+      "Quote amount": 762,
+      "Manufacturing cost ($)": 144.1,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.8108923884514435
+    },
+    {
+      "Quote date": "2022-10-26",
+      "Material": "Cotton",
+      "Size": "XS",
+      "Quote amount": 75.2,
+      "Manufacturing cost ($)": 17.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7712765957446808
+    },
+    {
+      "Quote date": "2022-10-26",
+      "Material": "Silk",
+      "Size": "XXL",
+      "Quote amount": 813.4,
+      "Manufacturing cost ($)": 163,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7996065896238013
+    },
+    {
+      "Quote date": "2022-10-26",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 196.2,
+      "Manufacturing cost ($)": 63.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6778797145769623
+    },
+    {
+      "Quote date": "2022-10-26",
+      "Material": "Wool",
+      "Size": "M",
+      "Quote amount": 194.2,
+      "Manufacturing cost ($)": 64.2,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.6694129763130794
+    },
+    {
+      "Quote date": "2022-10-27",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 112,
+      "Manufacturing cost ($)": 30.4,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7285714285714285
+    },
+    {
+      "Quote date": "2022-10-27",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 115.3,
+      "Manufacturing cost ($)": 30.3,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7372072853425846
+    },
+    {
+      "Quote date": "2022-10-27",
+      "Material": "Leather",
+      "Size": "M",
+      "Quote amount": 88,
+      "Manufacturing cost ($)": 40.1,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.5443181818181818
+    },
+    {
+      "Quote date": "2022-10-27",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 157.1,
+      "Manufacturing cost ($)": 77,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.50986632718014
+    },
+    {
+      "Quote date": "2022-10-28",
+      "Material": "Cotton",
+      "Size": "XXL",
+      "Quote amount": 80.2,
+      "Manufacturing cost ($)": 30.2,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.6234413965087282
+    },
+    {
+      "Quote date": "2022-10-28",
+      "Material": "Wool",
+      "Size": "S",
+      "Quote amount": 196.4,
+      "Manufacturing cost ($)": 58,
+      "Day of week": "Friday",
+      "Staff": "Barbara",
+      "Variance": 0.7046843177189409
+    },
+    {
+      "Quote date": "2022-10-31",
+      "Material": "Silk",
+      "Size": "S",
+      "Quote amount": 657.2,
+      "Manufacturing cost ($)": 107.2,
+      "Day of week": "Monday",
+      "Staff": "Andrea",
+      "Variance": 0.8368837492391965
+    },
+    {
+      "Quote date": "2022-11-01",
+      "Material": "Leather",
+      "Size": "XL",
+      "Quote amount": 229.2,
+      "Manufacturing cost ($)": 47.2,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7940663176265271
+    },
+    {
+      "Quote date": "2022-11-01",
+      "Material": "Wool",
+      "Size": "XS",
+      "Quote amount": 176,
+      "Manufacturing cost ($)": 49.4,
+      "Day of week": "Tuesday",
+      "Staff": "Andrea",
+      "Variance": 0.7193181818181817
+    },
+    {
+      "Quote date": "2022-11-02",
+      "Material": "Cotton",
+      "Size": "S",
+      "Quote amount": 83.3,
+      "Manufacturing cost ($)": 20.3,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.7563025210084033
+    },
+    {
+      "Quote date": "2022-11-02",
+      "Material": "Leather",
+      "Size": "S",
+      "Quote amount": 193.1,
+      "Manufacturing cost ($)": 35,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8187467633350596
+    },
+    {
+      "Quote date": "2022-11-02",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 175.4,
+      "Manufacturing cost ($)": 30,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8289623717217788
+    },
+    {
+      "Quote date": "2022-11-02",
+      "Material": "Silk",
+      "Size": "M",
+      "Quote amount": 693,
+      "Manufacturing cost ($)": 119.1,
+      "Day of week": "Wednesday",
+      "Staff": "Barbara",
+      "Variance": 0.8281385281385281
+    },
+    {
+      "Quote date": "2022-11-03",
+      "Material": "Leather",
+      "Size": "XS",
+      "Quote amount": 105.2,
+      "Manufacturing cost ($)": 29.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.7224334600760456
+    },
+    {
+      "Quote date": "2022-11-03",
+      "Material": "Wool",
+      "Size": "XL",
+      "Quote amount": 156.2,
+      "Manufacturing cost ($)": 79.2,
+      "Day of week": "Thursday",
+      "Staff": "Barbara",
+      "Variance": 0.4929577464788732
+    }
+  ]
+}
