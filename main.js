@@ -1,12 +1,11 @@
-const categoryQuote = {"cotton":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "leather":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "silk":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "tweed":{"XS":{quote:201.38}, "S":{quote:264.97}, "M":{quote:221.68}, "L":{}, "XL":{}, "XXL":{}}, "wool":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}}
+// Build data object
+const categoryQuote = {"cotton":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "leather":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "silk":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "tweed":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}, "wool":{"XS":{}, "S":{}, "M":{}, "L":{}, "XL":{}, "XXL":{}}}
 
 fetch('./data.json')
     .then((response) => response.json())
     .then((json) => {
         buildCategoryQuoteObject(json)
     });
-
-
 
 
 function buildCategoryQuoteObject(json) {
@@ -16,13 +15,12 @@ function buildCategoryQuoteObject(json) {
     for (let i = 0; i < size.length; i++) {
         for (let j = 0; j < material.length; j++) {
             findAvgQuote(json, material[j], size[i])
+            fillInTweed(categoryQuote)
             findPopularity(json, material[j], size[i], orderAvg)
             findInventory(categoryQuote, json, material[j], size[i])
         }
     }
 }
-
-
 
 
 function findAvgQuote(json, material, size) {
@@ -43,6 +41,13 @@ function findAvgQuote(json, material, size) {
 function populateAvgQuote(average, material, size) {
     categoryQuote[material.toLowerCase()][size].quote=average
     return categoryQuote
+}
+
+
+function fillInTweed(categoryQuote) {
+    categoryQuote.tweed.M.quote = categoryQuote.tweed.L.quote - (categoryQuote.tweed.L.quote * ((categoryQuote.wool.L.quote-categoryQuote.wool.M.quote)/categoryQuote.wool.L.quote))
+    categoryQuote.tweed.S.quote = categoryQuote.tweed.M.quote - (categoryQuote.tweed.M.quote * ((categoryQuote.wool.M.quote-categoryQuote.wool.S.quote)/categoryQuote.wool.M.quote))
+    categoryQuote.tweed.XS.quote = categoryQuote.tweed.S.quote - (categoryQuote.tweed.S.quote * ((categoryQuote.wool.S.quote-categoryQuote.wool.XS.quote)/categoryQuote.wool.S.quote))
 }
 
 
@@ -110,7 +115,7 @@ document.querySelector("#costForm").addEventListener("submit", function(e) {
     let staff = createStaffObject(costForm)
     let annualCost = utilMonthToYearly(costForm) + findStaffSalary(staff) + costForm[15].valueAsNumber + findCasualHours(staff)
     document.querySelector(".t1Output").innerHTML = "Annual outgoing cost: $"
-    document.querySelector(".t1Output").innerHTML += annualCost
+    document.querySelector(".t1Output").innerHTML += annualCost.toFixed(2)
   })
 
 
@@ -293,7 +298,7 @@ document.querySelector("#quoteForm").addEventListener("submit", function(e) {
     let size = document.getElementById("quoteForm")[3].value.toUpperCase()
     
     document.querySelector(".quote3output").innerHTML = "Quote: $0"
-    document.querySelector(".quote3output").innerHTML = `Quote: $${categoryQuote[material][size].quote}`
+    document.querySelector(".quote3output").innerHTML = `Quote: $${categoryQuote[material][size].quote.toFixed(2)}`
 
     if (categoryQuote[material][size].inventory===0) {
         if (categoryQuote[material][size].isPopular===true) {
